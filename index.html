@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Sally Student Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      const appRoot = document.querySelector("#application-root");
+
+      const resume = (
+        <div className="app">
+          <header>
+            <h1>Sally Student</h1>
+            <address>1245 West Elm Drive, Oakridge, MA, 37281</address>
+            <p>Cell - 405-130-1204 | Email - Sally@Student.com</p>
+            <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" />
+          </header>
+          <main>
+            <section>
+              <h2>Summary</h2>
+              <p>I am a hardworking marketing professional</p>
+            </section>
+            <section>
+              <h2>Experience</h2>
+              <p>I have 10 years experience working in marketing</p>
+            </section>
+            <section>
+              <h2>Education</h2>
+              <p>Bachelors in Arts, 2012</p>
+            </section>
+          </main>
+        </div>
+      );
+
+      ReactDOM.render(resume, appRoot);
+    </script>
+  </body>
+</html>
